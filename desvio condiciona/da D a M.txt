@@ -1,0 +1,200 @@
+D
+var
+    nota1, nota2, media: real
+    resultado: caractere
+
+início 
+    escreva("Digite a nota da 1ª avaliação:")
+    leia(nota1)
+    escreval("Digite a nota da 2ª avaliação:")
+    leia(nota2)
+
+    media <- (nota1 + nota2) / 2
+    se media >= 6 entao
+        resultado <- "Aprovado"
+    senao
+        resultado <- "Reprovado"
+    fimse
+    escreval("A média do aluno é: ", media)
+    escreval("O aluno foi: ", resultado)
+
+E 
+var
+    anoAtual, anoNascimento, idade: inteiro
+
+inicio
+    escreva("Digite o ano atual:")
+    leia(anoAtual)
+    escreva("Digite seu ano de nascimento:")
+    leia(anoNascimento)
+    idade <- anoAtual - anoNascimento
+    se idade >= 16 entao
+        escreva("Você pode votar este ano.")
+    senao
+        escreva("Você não pode votar este ano.")
+    fimse
+
+F
+var
+    valor1, valor2: inteiro
+    maior: inteiro
+
+inicio
+    escreva("Digite o primeiro valor:")
+    leia(valor1)
+    escreva("Digite o segundo valor:")
+    leia(valor2)
+    se valor1 > valor2 entao
+        maior <- valor1
+    senao
+        maior <- valor2
+    fimse
+    escreva("O maior valor é: ", maior)
+fimalgoritmo
+
+G
+var
+    valor1, valor2: inteiro
+
+inicio
+    escreva("Digite o primeiro valor:")
+    leia(valor1)
+    escreva("Digite o segundo valor:")
+    leia(valor2)
+
+    se valor1 < valor2 entao
+        escreva("Valores em ordem crescente: ", valor1, ", ", valor2)
+    senao
+        escreva("Valores em ordem crescente: ", valor2, ", ", valor1)
+    fimse
+fimalgoritmo
+
+H
+var
+    horaInicio, horaFim, duracao: inteiro
+
+inicio
+    escreva("Digite a hora de início do jogo:")
+    leia(horaInicio)
+    escreva("Digite a hora de fim do jogo:")
+    leia(horaFim)
+    se horaFim < horaInicio entao
+        duracao <- (24 - horaInicio) + horaFim
+    senao
+        duracao <- horaFim - horaInicio
+    fimse
+
+   
+    escreva("A duração do jogo é: ", duracao, " horas")
+fimalgoritmo
+
+Í
+var
+    horasTrabalhadas: inteiro
+    salarioHora, salarioTotal, horasExtras: real
+const
+    jornadaSemanal: inteiro = 40
+
+inicio 
+    escreva("Digite o número de horas trabalhadas no mês:")
+    leia(horasTrabalhadas)
+    escreva("Digite o valor do salário por hora:")
+    leia(salarioHora)
+
+    se horasTrabalhadas > jornadaSemanal * 4 entao
+        horasExtras <- horasTrabalhadas - (jornadaSemanal * 4)
+        salarioTotal <- (jornadaSemanal * 4 * salarioHora) + (horasExtras * salarioHora * 1.5)
+    senao
+        salarioTotal <- horasTrabalhadas * salarioHora
+    fimse
+
+ escreva("O salário total do funcionário é: R$ ", salarioTotal:0:2)
+fimalgoritmo
+
+J
+var
+    nome: caractere
+    sexo: caractere
+    altura, peso_ideal: real
+inicio
+    escreva("Digite o nome: ")
+    leia(nome)
+    escreva("Digite o sexo (M ou F): ")
+    leia(sexo)
+    escreval("Digite a altura (em metros): ")
+    leia(altura)
+
+    se sexo = "M" entao
+        peso_ideal ← (72.7 * altura) - 58
+    senao
+        peso_ideal ← (62.1 * altura) - 44.7
+    fimse
+
+    escreva("O peso ideal é: ", peso_ideal:0:2)
+fimalgoritmo
+
+K
+var
+    salario_fixo, vendas, salario_total, comissao: real
+inicio
+    escreva("Digite o salário fixo: ")
+    leia(salario_fixo)
+    escreva("Digite o valor das vendas: ")
+    leia(vendas)
+    se vendas <= 1500 entao
+     comissao ← vendas * 0.03
+    senao
+        comissao ← 1500 * 0.03 + (vendas - 1500) * 0.05
+    fimse
+    salario_total ← salario_fixo + comissao
+escreva("O salário total é: R$", salario_total:0:2)
+fimalgoritmo
+
+L
+var
+    numero_conta: inteiro
+    saldo, debito, credito, saldo_atual: real
+inicio
+    escreva("Digite o número da conta: ")
+    leia(numero_conta)
+    escreva("Digite o saldo atual: ")
+    leia(saldo)
+    escreva("Digite o valor do débito: ")
+    leia(debito)
+    escreva("Digite o valor do crédito: ")
+    leia(credito)
+
+    saldo_atual ← saldo - debito + credito
+
+    escreva("Saldo atual: R$", saldo_atual:0:2)
+
+    se saldo_atual >= 0 entao
+        escreva("Saldo Positivo")
+    senao
+        escreva("Saldo Negativo")
+    fimse
+fimalgoritmo
+
+M
+var
+    qtd_maxima, qtd_minima, qtd_estoque, qtd_media: real
+inicio
+    escreva("Digite a quantidade máxima em estoque: ")
+    leia(qtd_maxima)
+    escreva("Digite a quantidade mínima em estoque: ")
+    leia(qtd_minima)
+    escreva("Digite a quantidade atual em estoque: ")
+    leia(qtd_estoque)
+
+    qtd_media ← (qtd_maxima + qtd_minima) / 2
+
+    escreva("Quantidade média: ", qtd_media:0:2)
+
+    se qtd_estoque >= qtd_media entao
+        escreva("Não efetuar compra")
+    senao
+        escreva("Efetuar compra")
+    fimse
+fimalgoritmo
+
+
