@@ -1,0 +1,16 @@
+Í
+
+var  
+termo1, termo2, proximo, i: inteiro 
+inicio    
+termo1 := 0    
+termo2 := 1    
+escreval(termo1)    
+escreval(termo2)    
+para i de 3 ate 15 faca       
+proximo := termo1 + termo2       
+escreval(proximo)       
+termo1 := termo2       
+termo2 := proximo    
+fimpara 
+fimalgoritmo

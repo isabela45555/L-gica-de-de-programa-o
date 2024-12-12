@@ -1,0 +1,10 @@
+J
+
+var    
+celsius, fahrenheit: real 
+inicio    
+para celsius de 10 ate 100 passo 10 faca       
+fahrenheit := (9 * celsius + 160) / 5       
+escreval(celsius, "ºC = ", fahrenheit:2:2, "ºF")    
+fimpara 
+fimalgoritmo

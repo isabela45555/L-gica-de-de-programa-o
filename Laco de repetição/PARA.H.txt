@@ -1,0 +1,13 @@
+H
+
+var  
+ i, soma: inteiro 
+inicio    
+soma := 0    
+para i de 1 ate 500 faca       
+se i mod 2 = 0 entao          
+soma := soma + i       
+fimse    
+fimpara    
+escreval("A soma dos números pares de 1 até 500 é: ", soma) 
+fimalgoritmo
